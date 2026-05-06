@@ -1,4 +1,4 @@
-# 🌟 Hariku
+# Hariku
 
 > "Your daily companion for tasks, journal, expenses, and focus."
 
