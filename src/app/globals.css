@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #E8520A;
+  --color-primary-hover: #C94308;
+  --color-primary-light: #FDF0EA;
+  --color-surface: #FFFFFF;
+  --color-border-color: #E5E7EB;
+  --color-text-primary: #111827;
+  --color-text-muted: #6B7280;
+  --color-success: #16A34A;
+  --color-danger: #DC2626;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+}
+
+.date-box-transition {
+  transition: background-color 300ms ease-in-out,
+              border-color 300ms ease-in-out,
+              color 300ms ease-in-out;
+}
+
+@keyframes slideDownFromTop {
+  0% { transform: translateY(-40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUpFromBottom {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-down {
+  animation: slideDownFromTop 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUpFromBottom 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbar for horizontal scrolling (e.g. past entries) */
+.scrollbar-orange::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-orange::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+.scrollbar-orange::-webkit-scrollbar-thumb {
+  background: #E8520A;
+  border-radius: 8px;
+}
+.scrollbar-orange::-webkit-scrollbar-thumb:hover {
+  background: #C94308;
+}
