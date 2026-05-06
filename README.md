@@ -4,7 +4,7 @@
 
 Hariku is a personal daily productivity web app designed to streamline your daily routines. It seamlessly combines task management, daily journaling, expense tracking, and a Pomodoro timer into a single, cohesive, and aesthetically pleasing interface.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 This project is built using modern web development technologies:
 
@@ -17,15 +17,15 @@ This project is built using modern web development technologies:
 - **Icons**: [Lucide React](https://lucide.dev/) (v1.9.0)
 - **Password Hashing**: `bcryptjs` (v3.0.3)
 
-## ✨ Features
+## Features
 
-- **✅ Tasks**: Add, complete, and delete tasks with priority, category, and due date. Easily navigate through dates using the built-in date navigator.
-- **📖 Journal**: Daily journaling with mood tracking, auto-save functionality, and a clean interface to review past entries.
-- **💰 Expenses**: Track your expenses with a set budget, view category breakdowns, and analyze your monthly overview.
-- **🍅 Pomodoro Timer**: Dedicated focus timer with configurable short and long breaks, plus a session counter.
-- **🔒 Authentication**: Secure user registration and login system supporting both email and username.
+- **Tasks**: Add, complete, and delete tasks with priority, category, and due date. Easily navigate through dates using the built-in date navigator.
+- **Journal**: Daily journaling with mood tracking, auto-save functionality, and a clean interface to review past entries.
+- **Expenses**: Track your expenses with a set budget, view category breakdowns, and analyze your monthly overview.
+- **Pomodoro Timer**: Dedicated focus timer with configurable short and long breaks, plus a session counter.
+- **Authentication**: Secure user registration and login system supporting both email and username.
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these step-by-step instructions to get the project running locally.
 
@@ -72,13 +72,13 @@ Follow these step-by-step instructions to get the project running locally.
 7. **Open the Application**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔑 Environment Variables Explained
+## Environment Variables Explained
 
 - `DATABASE_URL`: The connection string to your PostgreSQL database. Prisma uses this to manage schemas and query data.
 - `AUTH_SECRET`: A secret string used by NextAuth to encrypt session tokens and secure cookies. You can generate a strong secret using `npx auth secret` or `openssl rand -base64 32`.
 - `AUTH_URL`: The canonical URL of your application. Set to `http://localhost:3000` for local development.
 
-## 📁 Project Structure
+## Project Structure
 
 Here is an overview of the core project structure:
 
@@ -97,7 +97,3 @@ src/
 │   └── prisma/           # Custom-generated Prisma Client
 └── lib/                  # Helper functions and project utilities
 ```
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
